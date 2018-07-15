@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var operation=prompt("Əməliyyatin adini yaz");
+
+
+    var a=Number(prompt());
+    var b=Number(prompt());
+    console.log("Daxil edilen ededlər"+ " "+a,b); 
+    switch (operation){
+    case "sum"  : console.log ("Alınan nəticə"+" "+ sum(a,b)); break;
+    case "mult" : console.log ("Alınan nəticə"+" "+mult(a,b));break;
+    case "ext"  : console.log ("Alınan nəticə"+" "+ext(a,b));break; 
+    case "div"  : console.log ("Alınan nəticə"+" "+ div(a,b)); 
+    }
+      
+    function sum (t,z){
+        return t+z;
+    }
+    function mult (t,z){
+        return t*z;
+    }
+
+    function ext (t,z){
+        return t / z;
+    }
+    function div (t,z){
+        return t - z;
+    }
+    
+    </script>
+</body>
+</html>
